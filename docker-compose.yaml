@@ -1,0 +1,11 @@
+version: "3"
+services:
+  jupyter:
+    build:
+      context: ./docker
+    image: bash_env:v2
+    volumes:
+      - ./playgorund:/home/playground
+    ports:
+      - 10000:8888
+    command: "jupyter lab"
