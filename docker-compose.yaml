@@ -8,4 +8,4 @@ services:
       - ./playgorund:/home/playground
     ports:
       - 10000:8888
-    command: "jupyter lab"
+    command: "jupyter lab --no-browser"
